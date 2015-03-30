@@ -7,7 +7,7 @@ Advanced Java Programming
 Homework Project 3, Phase 1, Problem 1
 */
 /**
-String.java: Reads strings from the user until the user enters "DONE". If a 
+StringApp.java: Reads strings from the user until the user enters "DONE". If a 
 string is entered that has too many characters (say 20), throw the exception. 
 The exception StringTooLongException catches and handles the exception if it is 
 thrown. Handle the exception by printing an appropriate message, and then 
@@ -20,9 +20,9 @@ public class StringApp
 {
 	public static void main(String[] args) throws StringTooLongException
 	{
-		String inputMsg = "Please enter a string, type \"DONE\" to finish > ";
-		String userInput = "";
 		String doneString = "done";
+		String inputMsg = "Please enter a string, type " + doneString.toUpperCase() + " to finish > ";
+		String userInput = "";
 		boolean done = false;
 		String byeMsg = "Have a great day!";
 		int maxLength = 20;
