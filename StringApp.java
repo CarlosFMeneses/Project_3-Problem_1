@@ -21,7 +21,8 @@ public class StringApp
 	public static void main(String[] args) throws StringTooLongException
 	{
 		String doneString = "done";
-		String inputMsg = "Please enter a string, type " + doneString.toUpperCase() + " to finish > ";
+		String inputMsg = "Please enter a string, type " + 
+						   doneString.toUpperCase() + " to finish > ";
 		String userInput = "";
 		boolean done = false;
 		String byeMsg = "Have a great day!";
